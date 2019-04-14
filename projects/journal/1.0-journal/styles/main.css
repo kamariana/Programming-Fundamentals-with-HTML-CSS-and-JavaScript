@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    line-height: 1.7;
+    background-color: #fff;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 125%;
+}
+
+
+
+/* 
+* Text and Images Styles
+*/
+h1,
+h2,
+h3,
+h4, h5, h6 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 1.7em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+blockquote {
+    margin: 0 0 1.7em 1.7em;
+    padding-left: 0.85em;
+    border-left: 5px solid #ccc;
+}
+
+figure {
+    margin: 0;
+    margin-bottom: 1.7em;
+}
+
+hr {
+    margin: 1.7em 0;
+    height: 0;
+    border: 1px solid #ccc; 
+}
+
+
+
+/* 
+ * Journal Styles
+*/
+.journal {
+   
+}
+
+.journal-content {
+    max-width: 38em;
+    margin: 0 auto;
+}
+
+.journal-meta {
+    display: block;
+    padding: 0.85em 0;
+    color: #666;
+}
+
+.journal-title {
+    margin: 0;
+    font-size: 3.4em;
+    line-height: 1.275;
+}
+
+.journal-lead {
+    padding: 0.85em 0;
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+    font-size: 1.7em;
+}
+
+
+/* Pull left media */
+.pull-left {
+    margin-left: -7.8em;
+}
+
