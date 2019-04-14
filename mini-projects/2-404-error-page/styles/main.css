@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    line-height: 1.6;
+    background-color: yellow;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    display: flex;
+    height: 100vh;
+}
+
+
+
+.error-page {
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 12.8em;
+    margin: 0;
+    line-height: 1;
+}
+.sub-title {
+    font-size: 3.2em;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 3.2em;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}

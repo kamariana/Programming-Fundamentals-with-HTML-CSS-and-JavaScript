@@ -1,0 +1,21 @@
+/**
+    1. this make the body to take full view port height of the screen regardless of the height of the elements in the body. 
+    2. this changes the display of the div from block to flex, which helps us to easily center it both horizontally and vettically with `margin: auto` on the children
+*/
+body {
+    background-color: orange;
+    height: 100vh; /* 1 */
+    display: flex; /* 2 */
+}
+
+
+/**
+    1. This centers the elements in the div
+    2. this centers the div itself by automatically calculating how much space is left in four directions. it depends on `display: flex;` on the parent item.
+*/
+div {
+    
+    text-align: center; /* 1 */
+    margin: auto; /* 2 */
+}
+
