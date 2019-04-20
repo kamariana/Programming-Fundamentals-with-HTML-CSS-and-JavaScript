@@ -1,0 +1,396 @@
+/**
+ * The @charset CSS at-rule
+ * This at-rule is useful when using non-ASCII characters in some CSS properties, like content.
+ * It must be the first element in the style sheet and not be preceded by any character
+ */
+@charset "utf-8"; 
+
+
+
+/**
+ * Variables
+ */
+:root {
+  --primary-color: #0081cc;
+  --primary-color-dark: #005e99;
+  --grey: #819298;
+  --grey-light: #f9f9f9;
+  --grey-blue: #ECEFF1;
+  --grey-darker: #283d48;
+  --color-hover: #005e99;
+  --color-focus: #004e7f;
+  --color-active: #003d66;
+  --color-visited: #003d66;
+  --leading: 1.7;
+  --vr: 1.7rem;
+  --vr-x2: 3.4rem;
+}
+
+
+
+/**
+ * Reset
+ */
+body,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+
+/**
+ * Normalize
+ */
+
+
+p:not(:last-child),
+figure:not(:last-child),
+address:not(:last-child) {
+  margin-bottom: 1.7em;
+}
+
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child) {
+  margin-top: 0.8rem;
+}
+
+
+
+/**
+ * Base and Typo styles
+ */
+html {
+  line-height: var(--leading);
+  font-size: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: var(--grey-darker);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.8rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+/**
+ * Layout Styles
+ */
+
+.site-wrapper {
+  max-width:1920px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* header */
+.site-header {
+  background-color: var(--primary-color);
+}
+
+
+/* contents */
+.content{
+  display: flex;
+  padding: var(--vr-x2) 0;
+  
+}
+
+.content-primary {
+  width: 60%;
+  padding-right: var(--vr-x2);
+}
+
+.content-secondary {
+  width: 40%;
+}
+
+
+/* footer */
+.site-footer {
+  background-color: var(--primary-color);
+}
+
+.site-footer,
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer-primary {
+  display: flex;
+  padding: var(--vr-x2) 0;
+}
+
+/* contacts */
+.contacts {
+  width: 30%;
+}
+
+
+/* sitemap */
+.site-map {
+  width: 30%;
+}
+
+.site-map-nav a {
+  display: block;
+}
+
+/* socials */
+.socials {
+  width: 40%;
+}
+
+.social-nav {
+  display: flex;
+
+}
+
+.social-nav a {
+  display: block;
+  height: 32px;
+  width: 32px;
+  padding: 0.8rem;
+  margin: 5px;
+  border: 1px solid var(--grey-darker);
+  border-radius: 5px
+}
+
+.social-nav a:hover {
+  border: 1px solid var(--grey);
+}
+
+.social-nav a {
+  display: block;
+  
+}
+
+/* secondary footer */
+.footer-secondary {
+  background-color: var(--primary-color-dark);
+}
+
+.footer-secondary-inner {
+  display: flex;
+  padding: var(--vr) 0;
+}
+
+.copy {
+  margin-right: auto;
+}
+
+
+
+
+/**
+ * Navigations
+ */
+.navbar {
+  display: flex;
+}
+
+.navbar  a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: var(--vr);
+}
+
+.navbar  a:hover { 
+  background-color: var(--color-hover);
+  color: #fff;
+}
+
+.navbar  a.active {
+  background-color: var(--color-active);
+} 
+
+
+
+
+/**
+ * Logo styles
+ */
+.logo {
+  margin-right: auto;
+}
+
+
+
+
+/**
+ * hero section styles
+ */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--grey-blue);  
+}
+
+/* banner */
+.hero--banner {
+  min-height: 50vh;
+}
+
+.hero--banner__inner {
+  text-align: center;
+}
+
+.hero--banner__title {
+  font-size: 2.55rem;
+}
+
+
+
+
+/* profile */
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  
+}
+
+.profile-img {
+  border-radius: 50%;
+  margin-right:  var(--vr-x2);
+}
+
+.profile-details {
+
+}
+
+.profile-title {
+  font-size: 3.4rem;
+}
+
+
+/* aside content styles */
+.friends-nav {
+  margin-bottom: 1.7em;
+}
+
+
+.friends-nav a {
+  display: block;
+  padding: 0.5rem
+}
+
+
+
+
+
+
+/**
+ * Selections 
+ */
+::selection {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+
+
+/**
+ * Buttons
+ */
+.btn  {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.7rem;
+  border-radius: 5px;
+}
+
+.btn--primary {
+  background-color: var(--primary-color);
+}
+
+.btn--secondary {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+
+.btn:hover  {
+  background-color: var(--color-hover);
+  color: #fff;
+}
+
+.btn:active  {
+  background-color: var(--color-active);
+}
+
+.btn:focus,
+.btn:visited {
+  background-color: var(--color-focus);
+}
+
+
+/**
+ Link states
+ apply different swatches for link states
+*/
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--primary-color-dark);
+  text-decoration: none;
+}
+
+
+
+/**
+ btn
+ Webkit / Chrome Specific CSS to remove tap highlight color
+ remove gradient in ff
+*/
+.btn {
+
+  background-image: none;  /* 1 */
+  -webkit-tap-highlight-color: transparent;/*  2 */
+}
+
+/* remove outlines on touchable elements in ff */
+.btn::-moz-focus-inner {
+  border: 0;
+}
